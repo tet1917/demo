@@ -5,10 +5,12 @@
 <title>足し算ページ</title>
 </head>
 <body>
+	足し算の計算式
+<!--	result.htmlに渡す情報をformで送信-->
 	<form action="#" th:action="@{/result}" th:object="${form}" method="post">
-		<input type="number" th:field="*{num1}">
+		<input type="text" th:field="*{num1}">
 		+
-		<input type="number" th:field="*{num2}">
+		<input type="text" th:field="*{num2}">
 		<input type="submit" value="計算">
 	</form>
 </body>

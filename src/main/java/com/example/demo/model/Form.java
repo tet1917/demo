@@ -3,13 +3,22 @@ package com.example.demo.model;
 import lombok.Getter;
 import lombok.Setter;
 
+
+
 //下のコメントの欄を@getter,@setterでまとめ書き
 @Getter
 @Setter
 public class Form {
-	  private int num1 = 0;
-	  private int num2 = 0;
-	  private int total = 0;
+	  private double num1 = 0;
+	  private double num2 = 0;
+	  private double num3 = 0;
+	  private double num4 = 0;
+	  
+	  private double total = 0;
+	  boolean check = true;
+	  //正規表現
+	  
+	  
 
 //	  public int getNum1(){
 //	    return num1;
@@ -35,7 +44,11 @@ public class Form {
 //	    this.total = total;
 //	  }
 	  public void sumTotal(){
-	    total = this.num1 + this.num2;
-	    setTotal(total);    
+			total = this.num1 + this.num2;
+		    setTotal(total);
+	  }
+	  public void maiTotal(){
+			total = this.num3 - this.num4;
+		    setTotal(total);
 	  }
 }
