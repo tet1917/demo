@@ -21,7 +21,7 @@ public class Form {
 			total = this.num1 + this.num2;
 		    setTotal(total);
 	  }
-	  public void maiTotal(){
+	  public void mainusTotal(){
 			total = this.num3 - this.num4;
 		    setTotal(total);
 	  }

@@ -10,17 +10,17 @@ import com.example.demo.model.Form;
 
 @Controller
 
-public class ContMai {
+public class ControllerMinus {
 
-	    @RequestMapping("/mai")
+	    @RequestMapping("/mainus")
 	    public String form(Model model){
 	      model.addAttribute("form", new Form());
-	      return "mai.html";
+	      return "mainus.html";
 	    }
 
-	    @RequestMapping(value="/mai", method = RequestMethod.POST)
+	    @RequestMapping(value="/mainus", method = RequestMethod.POST)
 		public String result(@ModelAttribute Form form, Model model){
-			form.maiTotal();
+			form.mainusTotal();
 			model.addAttribute("form", form);
 		 return "result.html";
 		}
