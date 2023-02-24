@@ -14,7 +14,6 @@ public class Form {
 	  private double num2 = 0;
 	  private double num3 = 0;
 	  private double num4 = 0;
-	  
 	  private double total = 0;
 
 	  public void sumTotal(){
