@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="UTF-8">
-<title>fizzbazz</title>
+	<meta charset="UTF-8">
+	<title>fizzbazz</title>
 </head>
+
 <body>
-	<form action="fizzbazz.html" method="post">
-		<h1>fizzbazz演習</h1>
-		<input name="num" type="number">
+	<h1>fizzbazz演習</h1>
+	<form action="/fizzbazz" method="post">
+		<input name="quantity" type="number">
 		<input type="submit" value="計算する">
 	</form>
-	
 	<ul>
-		<li th:text="${list}">
-			
-		</li>
+		<ol th:text="${list}">
+		</ol>
 	</ul>
-
 </body>
+
 </html>
