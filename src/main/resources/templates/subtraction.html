@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<!--	<p><span th:text="${subtraction}"></span></p>-->
+	<form action="/subtraction" method="post">
+		<input name="p1" type="number">
+		-
+		<input name="p2" type="number">
+		<input type="submit" value="計算">
+	</form>
+	<p><span th:text="${subtraction}"></span></p>
+
+</html>
