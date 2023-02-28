@@ -12,9 +12,8 @@
 		<input name="quantity" type="number">
 		<input type="submit" value="計算する">
 	</form>
-	<ul>
-		<ol th:text="${list}">
-		</ol>
+	<ul style="list-style: none;" th:each="list:${list1}">
+		<li th:text="${list}"></li>
 	</ul>
 </body>
 
