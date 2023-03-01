@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p><span th:text="${kake}"></span></p>
+	
+	<form action="/kake2" method="post">
+		<input name="p1" type="number">
+		×
+		<input name="p2" type="number">
+		<button type="submit" >計算</button>
+	</form>
+	<p><span th:text="${kake2}"></span></p>
+	
+</body>
+</html>

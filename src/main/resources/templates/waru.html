@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Practice1</title>
+</head>
+
+<body>
+	<span th:text="${a}"></span>
+	<form action="/waru1" method="post">
+		<input type="number" name="p3">
+		÷
+		<input type="number" name="p4">
+		<button type="submit">送る</button>
+	</form>
+	<p>
+		<span th:text="${waru}"></span>
+	</p>
+</body>
+
+</html>
