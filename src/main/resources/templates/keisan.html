@@ -7,10 +7,18 @@
 </head>
 
 <body>
+	<form action="/keisan2" method="post">
+		<input name="p1" type="text">
+		<input name="p2" type="text">
+		<input name="tasu" type="submit" value="＋">
+		<input name="hiku" type="submit" value="－">
+		<input name="kake" type="submit" value="×">
+		<input name="waru" type="submit" value="÷">
+	</form>
+	=
 	<p><span th:text="${kekkaTasu}"></span></p>
 	<p><span th:text="${kekkaHiku}"></span></p>
 	<p><span th:text="${kekkaKake}"></span></p>
 	<p><span th:text="${kekkaWaru}"></span></p>
-</body>
 
 </html>
