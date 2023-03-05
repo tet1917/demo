@@ -9,21 +9,21 @@
 <body>
 	<h1>四則演算３つの値</h1>
 	<form action="/kekka3" method="post">
-		<input name="p1" type="text">
+		<input name="p1" type="number">
 		<select name="first1">
 			<option value="firstTasu">＋</option>
 			<option value="firstHiku">ー</option>
-			<option value="firstKake">÷</option>
-			<option value="firstWaru">×</option>
+			<option value="firstKake">×</option>
+			<option value="firstWaru">÷</option>
 		</select>
-		<input name="p2" type="text">
+		<input name="p2" type="number">
 		<select name="sisoku1">
 			<option value="tasu">＋</option>
 			<option value="hiku">ー</option>
-			<option value="kake">÷</option>
-			<option value="waru">×</option>
+			<option value="kake">×</option>
+			<option value="waru">÷</option>
 		</select>
-		<input name="p3" type="text">
+		<input name="p3" type="number">
 		<input type="submit" value="計算する">
 	</form>
 	<p><span th:text="${kekka}"></span></p>

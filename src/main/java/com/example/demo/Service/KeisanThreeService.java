@@ -6,51 +6,50 @@ import org.springframework.stereotype.Service;
 public class KeisanThreeService {
 	public String keisan(String first, String sisoku, String param1, String param2, String param3) {
 		int kekka1;
-		kekka1=0;
+		kekka1 = 0;
 		int x = Integer.parseInt(param1);
 		int y = Integer.parseInt(param2);
 		int z = Integer.parseInt(param3);
-
-
-		if (first == "firstTasu") {
-			if (sisoku == "tasu") {
+		
+		if (first .equals("firstTasu")) {
+			if (sisoku.equals("tasu")) {
 				kekka1 = x + y + z;
-			} else if (sisoku == "hiku") {
+			} else if (sisoku .equals("hiku")) {
 				kekka1 = x + y - z;
-			} else if (sisoku == "kake") {
+			} else if (sisoku.equals("kake")) {
 				kekka1 = x + y * z;
-			} else if (sisoku == "waru") {
+			} else if (sisoku.equals("waru")) {
 				kekka1 = x + y / z;
 			}
 
-		} else if (first == "firstHiku") {
-			if (sisoku == "tasu") {
+		} else if (first.equals("firstHiku")) {
+			if (sisoku.equals("tasu")) {
 				kekka1 = x - y + z;
-			} else if (sisoku == "hiku") {
+			} else if (sisoku.equals("hiku")) {
 				kekka1 = x - y - z;
-			} else if (sisoku == "kake") {
+			} else if (sisoku.equals("kake")) {
 				kekka1 = x - y * z;
-			} else if (sisoku == "waru") {
+			} else if (sisoku.equals("waru")) {
 				kekka1 = x - y / z;
 			}
-		} else if (first == "firstKake") {
-			if (sisoku == "tasu") {
+		} else if (first.equals("firstKake")) {
+			if (sisoku.equals("tasu")) {
 				kekka1 = x * y + z;
-			} else if (sisoku == "hiku") {
+			} else if (sisoku.equals("hiku")) {
 				kekka1 = x * y - z;
-			} else if (sisoku == "kake") {
+			} else if (sisoku.equals("kake")) {
 				kekka1 = x * y * z;
-			} else if (sisoku == "waru") {
+			} else if (sisoku.equals("waru")) {
 				kekka1 = x * y / z;
 			}
-		} else if (first == "firstWaru") {
-			if (sisoku == "tasu") {
+		} else if (first.equals("firstWaru")) {
+			if (sisoku.equals("tasu")) {
 				kekka1 = x / y + z;
-			} else if (sisoku == "hiku") {
+			} else if (sisoku.equals("hiku")) {
 				kekka1 = x / y - z;
-			} else if (sisoku == "kake") {
+			} else if (sisoku.equals("kake")) {
 				kekka1 = x / y * z;
-			} else if (sisoku == "waru") {
+			} else if (sisoku.equals("waru")) {
 				kekka1 = x / y / z;
 			}
 		}
