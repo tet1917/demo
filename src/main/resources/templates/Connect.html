@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>kekka</title>
+</head>
+<body>
+<h1>文字列の結合</h1>
+<form action="/connect" method="post">
+	<input name="p1" type="text">
+	+
+	<input name="p2" type="text">
+	<input type="submit" value="結合する">
+</form>
+<p th:text="${kekka}"></p>
+</body>
+</html>
