@@ -9,7 +9,9 @@
 <body>
 	<h1>api</h1>
 	
-	<p><ul th:each="list:${list}"><li th:text="${list}"></li></ul></p>
+	<ul th:each="list:${list}">
+		<li th:text="${list}"></li>
+	</ul>
 </body>
 
 </html>

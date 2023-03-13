@@ -7,7 +7,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.demo.Service.GetApiServise;
-import com.example.demo.data.Datum;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
@@ -21,7 +20,7 @@ public class GetApiController {
 	
 	@GetMapping("/api")
 	public String aaa(Model model) throws JsonMappingException, JsonProcessingException {
-		ArrayList<Datum> list = new ArrayList<>();
+		ArrayList<String> list = new ArrayList<>();
 		list=getApiServise.getApi();
 		model.addAttribute("api",list);
 		return "GetApi.html";

@@ -18,7 +18,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Repository
 public class GetApiRepository {
 	public AddEntity callMethod() throws JsonMappingException, JsonProcessingException {
-		String url = "https://umayadia-apisample.azurewebsites.net/api/persons\n";
+		String url = "https://umayadia-apisample.azurewebsites.net/api/persons";
 		RestTemplate restTemplate = new RestTemplate();
 		ResponseEntity<String> getApi = restTemplate.getForEntity(url, String.class);
 		ResponseEntity<String> res = getApi;
