@@ -18,7 +18,7 @@ public class GetApiController {
 		
 	}
 	
-	@GetMapping("/api")
+	@GetMapping("/aaa")
 	public String aaa(Model model) throws JsonMappingException, JsonProcessingException {
 		ArrayList<String> list = new ArrayList<>();
 		list=getApiServise.getApi();
