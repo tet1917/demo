@@ -7,11 +7,17 @@
 </head>
 
 <body>
-	<h1>api</h1>
-	
-	<ul th:each="list:${api}">
-		<li th:text="${list}"></li>
-	</ul>
+	<!--	<h1>api</h1>-->
+
+	<!--	<ul th:each="list:${api}">-->
+	<!--		<li th:text="${list}"></li>-->
+	<!--	</ul>-->
+	<form action="/aaa" method="post">
+		<th:block th:each="api:${key}">
+			<span th:text="${data.name}"></span>
+		</th:block>
+		<input type="button" value="API">
+	</form>
 </body>
 
 </html>
